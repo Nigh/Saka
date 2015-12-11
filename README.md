@@ -26,7 +26,7 @@ build:
     copy:
         - Saka/css
         - Saka/js
-        - Saka/favicon.ico
+        - Saka/favicon.png
         - Saka/robots.txt
         - source/images
     ...
