@@ -26,19 +26,21 @@
                 <article class="content">{{.Content}}</article>
                 <section class="author">
                     {{if .Author.Avatar}}<div class="avatar" style="background-image: url({{.Author.Avatar}});"></div>{{end}}
-                    <a class="name">{{.Author.Name}}</a>
-                    <div class="intro">{{.Author.Intro}}</div>
+                    <!-- <a class="name">{{.Author.Name}}</a> -->
+                    <!-- <div class="intro">{{.Author.Intro}}</div> -->
                 </section>
                 <section class="recommend">
                     {{if .Prev}}
-                    <section class="nav prev{{if .Next}} more{{end}}">
-                        <div class="head">{{i18n "prev_reading"}}</div>
+                    <section class="nav next{{if .Prev}} more{{end}}">
+                        <div class="head">Next</div>
+                        <!-- <div class="head">{{i18n "prev_reading"}}</div> -->
                         <a class="link" href="{{.Site.Root}}/{{.Prev.Link}}">{{.Prev.Title}}</a>
                     </section>
                     {{end}}
                     {{if .Next}}
-                    <section class="nav next{{if .Prev}} more{{end}}">
-                        <div class="head">{{i18n "next_reading"}}</div>
+                    <section class="nav prev{{if .Next}} more{{end}}">
+                        <div class="head">Prev</div>
+                        <!-- <div class="head">{{i18n "next_reading"}}</div> -->
                         <a class="link" href="{{.Site.Root}}/{{.Next.Link}}">{{.Next.Title}}</a>
                     </section>
                     {{end}}
