@@ -4,13 +4,9 @@
 
 ## 说明
 
-基于`ink_Werttin`修改。当修改到跟`ink_Werttin`没有关系之后我会删掉这行。
-
 #### 预览
 
-#### 准备食材
-
-#### 如何食用
+#### 食用方法
 
 下载Source，把Saka文件夹放入blog目录。
 
@@ -19,15 +15,12 @@
 ```
 site:
     ...
+    comment:  # 这里填写你的多说域名short-name
     theme: Saka
     ...
 build:
     ...
     copy:
-        - Saka/css
-        - Saka/js
-        - Saka/favicon.png
-        - Saka/robots.txt
         - source/images
     ...
 ``` 
