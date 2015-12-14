@@ -1,5 +1,43 @@
+# Copied files to public folder when build
 copy:
     - ./css
     - ./js
     - ./favicon.png
     - ./robots.txt
+
+# I18n Support
+
+lang:
+    archive:
+        en: ARCHIVE
+        zh: 归档
+    tag:
+        en: TAGS
+        zh: 标签
+    articles:
+        en: Articles
+        zh: 篇文章
+    updated:
+        en: updated
+        zh: updated
+    prev_page:
+        en: Prev
+        zh: Prev
+    next_page:
+        en: Next
+        zh: Next
+    prev_reading:
+        en: Prev
+        zh: Prev Reading
+    next_reading:
+        en: Next
+        zh: Next Reading
+    top:
+        en: TOP
+        zh: 置顶
+    rss:
+        en: RSS
+        zh: 订阅
+    index:
+        en: HOME
+        zh: 首页
