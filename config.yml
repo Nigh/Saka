@@ -2,6 +2,7 @@
 copy:
     - ./css
     - ./js
+    - ./icon
     - ./favicon.png
     - ./robots.txt
 
